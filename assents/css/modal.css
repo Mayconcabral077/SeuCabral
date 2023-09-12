@@ -1,0 +1,409 @@
+/* GLOBAL */
+.form-wrap {
+height:50vh;
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+animation: trans .7s;
+}
+
+.btns-wrap {
+min-width: 50vw;
+display: flex;
+justify-content: space-between;
+}
+
+.next-box, 
+.back-box {
+align-self: flex-end;
+height: calc(var(--index) * 1.8) ;
+width: calc(var(--index) * 4.5);
+font-size: calc(var(--index) * .8);
+border: none;
+background: #e0a327;
+border-radius: 5px;
+cursor: pointer;
+transition: all .2s;
+}
+
+.next-box:hover,
+.back-box:hover {
+background-color: var(--color-3);
+}
+
+.next-box:disabled{
+    opacity: .7;
+}
+
+.next-box:disabled:hover {
+opacity: .4;
+}
+
+
+.msg-erro{
+display: none;
+color: red;
+font-size: calc(var(--index) * .7);
+justify-content: center;
+letter-spacing: 1px;
+font-style: italic;
+margin-top: 2px;
+text-align: center;
+}
+
+
+/* Modal */
+
+.modal-container {
+display: none;
+align-items: center;
+justify-content: center;
+position: fixed;
+top: 0;
+left: 0;
+height: 100vh;
+width: 100%;
+background-color: rgb(0, 0, 0, 0.8);
+color: var(--color-2);
+z-index: 999;
+}
+
+.close-modal {
+position: absolute;
+top: 20px;
+right: 10%;
+color: var(--color-2);
+border: none;
+background-color: transparent;
+cursor: pointer;
+font-size: calc(var(--index) * 1.4);
+}
+
+.modal-end {
+display: none;
+justify-content: space-evenly;
+align-items: center;
+min-height: calc(var(--index) * 7);
+min-width: calc(var(--index) * 20);
+background-color: var(--color-2);
+color: var(--color-1);
+gap: 2rem;
+padding: 3%;
+border-radius: 8px
+}
+
+.modal-end .icon{
+font-size: calc(var(--index) * 1);
+height: calc(var(--index) * 2);
+width: calc(var(--index) * 2);
+background-color: var(--color-3);
+color: var(--color-2);
+border: none;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+}
+
+.modal-end p{
+font-size: calc(var(--index) * 1);
+}
+
+.modal {
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 3rem;
+align-items: center;
+min-height: 80%;
+width: 75%;
+background-color: var(--color-2);
+color: var(--color-1);
+padding: 3%;
+border-radius: 8px;
+}
+
+.active {
+display: flex;
+}
+
+.active .modal, 
+.active .modal-end {
+animation: modal .5s;
+}
+
+.header-modal {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.header-modal ul{
+width: 70vw;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.progressbar_1 > div, 
+.progressbar_2 > div, 
+.progressbar_3 > div {
+display: flex;
+align-items: center;
+justify-content: center;
+width: calc(var(--index) * 3.2);
+height: calc(var(--index) * 3.2);
+border-radius: 50%;
+background-color: #5f9ea079;
+}
+
+.lt-stl {
+font-size: calc(var(--index) / 1);
+}
+
+
+/* Form-wrap-1 */
+
+.box-avatar {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: .8rem;
+}
+
+.form-select {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.select-avatar {
+display: flex;
+align-items: center;
+justify-content: center;
+width: calc(var(--index) * 6);
+height: calc(var(--index) * 6);
+border-radius: 50%;
+background-color: #e0a327;
+transition: all .2s ;
+cursor: pointer;
+}
+
+.select-avatar img {
+transition: all .3s;
+width: calc(var(--index) * 4);
+}
+
+.select-avatar img:hover {
+transform: scale(1.1);
+}
+
+.title-avatar {
+font: 600 calc(var(--index) * 1.2) var(--font-secundaria);
+}
+
+
+/* form-options  */
+
+.form-option-1,
+.form-option-2,
+.form-option-3 {
+display: none;
+}
+
+.form-option-1 form,
+.form-option-2 form,
+.form-option-3 form {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 1rem;
+font-size: calc(var(--index) * 1);
+}
+
+.box-corte-one > div,
+.box-corte-two > div {
+display: flex;
+gap: .3rem;
+padding: 1% 0;
+}
+
+input[type="checkbox"] {
+min-height: calc(var(--index) / 1);
+min-width: calc(var(--index) / 1);
+}
+
+/* Form-wrap-3 */
+
+.form-wrap-3, 
+.form-wrap-4{ 
+gap: 1rem;
+display: none;
+flex-direction: column;
+}
+
+.form-wrap h3 {
+font: 500 calc(var(--index) * 1.4) var(--font-principal);
+letter-spacing: 1px;
+text-align: center;
+}
+
+.form-wrap-3 p {
+text-align: center;
+font-size: calc(var(--index) * .6);
+font-style: italic;
+}
+
+.form-wrap-3 form {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.container-hour-date {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+gap: 1rem;
+}
+
+select {
+cursor: pointer;
+border: none;
+background-color: #5f9ea03b;
+border-radius: 5px;
+font-family: var(--font-principal);
+min-width: calc(var(--index) * 5);
+min-height: calc(var(--index) * 2);
+font: 500 calc(var(--index) * .8) var(--font-principal);
+}
+
+
+/* Form-wrap-4 */
+
+.form-wrap-4 form {
+display: flex;
+justify-content: space-evenly;
+}
+
+#container-info-data {
+flex-wrap: wrap;
+display: flex;
+justify-content: center;
+gap: 1.2rem;
+flex-wrap: wrap;
+}
+
+.info-data {
+padding: .5rem 0 .5rem .5rem;
+height: 2rem;
+min-width: calc(var(--index) * 15);
+border: none;
+background-color: #5f9ea03b;
+border-radius: 5px;
+font-size: calc(var(--index) * .8);
+outline: none;
+}
+
+@keyframes modal {
+from {
+opacity: 0;
+transform: translate3d(0, -60px, 0);
+}
+to {
+opacity: 1;
+transform: translate3d(0, 0, 0);
+}
+}
+
+@keyframes trans {
+from {
+opacity: 0;
+transform: translate3d(-60px, 0, 0);
+}
+to {
+opacity: 1;
+transform: translate(0, 0, 0);
+}
+}
+
+
+@media(max-width:700px)  {
+.form-wrap h3 {
+font-size: 1em;
+
+}
+.progressbar_1 > div, 
+.progressbar_2 > div, 
+.progressbar_3 > div {
+width: 3rem;
+height: 3rem;
+}
+
+.lt-stl {
+font-size: 1.2em;
+}
+
+.select-avatar {
+width: 5rem;
+height: 5rem;
+}
+
+.next-box, 
+.back-box {
+height: 2rem;
+width: 4rem;
+font-size: .7em;
+}
+
+.form-option-1 form,
+.form-option-2 form,
+.form-option-3 form {
+font-size: .9em;
+}
+
+select {
+width: 4.2rem;
+height: 1.4rem;
+font-size: .7em;
+}
+
+.info-data {
+font-size: .8em;
+}
+
+}
+
+
+@media(max-width:360px)  {
+
+.modal  {
+width: 90%;
+min-height: 75%;
+}
+
+.progressbar_1 > div, 
+.progressbar_2 > div, 
+.progressbar_3 > div {
+width: 2.5rem;
+height: 2.5rem;
+} 
+
+.lt-stl {
+font-size: 1em;
+}
+
+.select-avatar {
+width: 4rem;
+height: 4rem;
+}
+
+.form-option-1 form,
+.form-option-2 form,
+.form-option-3 form {
+font-size: .8em;
+}
+}

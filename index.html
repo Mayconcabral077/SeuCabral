@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/tudo.png" type="image/x-icon">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js" integrity="sha512-KaIyHb30iXTXfGyI9cyKFUIRSSuekJt6/vqXtyQKhQP6ozZEGY8nOtRS6fExqE4+RbYHus2yGyYg1BrqxzV6YA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assents/css/style.css">
+    <link rel="stylesheet" href="/assents/css/menu.css">
+    <link rel="stylesheet" href="/assents/css/mediaquery.css">
+    <link rel="stylesheet" href="/assents/css/modal.css">
+    <!-- JAVA SCRIPT -->
+    <script src="/assents/js/app.js" defer></script>
+    <title>Barbearia Seu Cabral | Agendamento online</title>
+</head>
+<body>
+    <header id="#">
+        <nav>         
+            <a href="#"><img src="img/tudo.png" alt="imagem-logo" class="img-logo"></a>   
+                <ul>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#service">Serviços</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                    <li onclick="openModal()"><a href="#agendar">Agendamento</a></li>
+                    
+                    <div class="media-mobile">
+                        <a href="https://pt-br.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>        
+                    </div>
+                </ul>
+
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </nav>  
+            
+            <video autoplay muted loop>
+                <source src="img/maker-header.mp4" type="video/mp4">
+            </video>
+
+                <div class="media">
+                    <a href="https://pt-br.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>        
+                </div>
+
+                    <button class="btn-header" onclick="openModal()" >AGENDE SEU HORÁRIO</button>
+    </header>
+
+    <main>
+            <section id="about">
+                <img src="img/AINDA-removebg-preview.png" alt="imagem-logo">
+                    <div class="box-txt">
+                        <h2>Seu Cabral</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id commodi explicabo sed ullam error corrupti tenetur voluptatum rem? Quam ab libero quos, adipisci quasi officiis ipsa voluptate dolores eveniet voluptates corporis optio quas consequatur, voluptatum suscipit ea. Veritatis officiis aut omnis totam voluptas vitae explicabo, quaerat natus consequatur vero fugit placeat sed possimus distinctio eveniet, ipsam ad nobis, amet quis. Enim maiores laudantium hic sunt consectetur doloremque.</p>
+                    </div>
+            </section>
+
+            <section id="service">
+                <img src="img/bigode.png" alt="img" class="logo-bigode">
+                    <h2>Seviços</h2>
+
+                    <div class="grid-service">
+                        <div class="ui-card">
+                            <img src="img/cabelo.jpg" alt="img">
+                            <div class="description">
+                                <h3>Cabelo</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, quia!</p>
+                                    <a href="#agendar" onclick="openModal()">Agende aqui</a>
+                            </div>
+                        </div>
+        
+                            <div class="ui-card">
+                                <img src="/img/barba.jpg" alt="img">
+                                <div class="description">
+                                    <h3>Barba</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, quia!</p>
+                                    <a href="#agendar" onclick="openModal()">Agende aqui</a>
+                                </div>
+                                    
+                            </div>
+        
+                                <div class="ui-card">
+                                    <img src="img/kids.jpg" alt="img">
+                                        <div class="description">
+                                            <h3>Kids</h3>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, quia!</p>
+                                    <a href="#agendar" onclick="openModal()">Agende aqui</a>
+                                        </div> 
+                                </div>
+        
+                                    <div class="ui-card">
+                                        <img src="img/beer.jpg" alt="img">
+                                            <div class="description">
+                                                <h3>Espaço Beer</h3>
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, quia!</p>
+                                    <a href="#agendar" onclick="openModal()">Agende aqui</a>
+                                            </div>
+                                    </div>
+                    </div>
+            </section>
+
+            <section id="contact">
+                    <div class="box">
+                            <div class="container-contact">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-envelope"></i> 
+                                        <span>seucabral@teste.com</span>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-phone"></i> 
+                                        <span>(99) 2222-5555</span>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-brands fa-whatsapp"></i> 
+                                        <span> (99) 95888-5555</span>
+                                    </li>    
+                                </ul>
+
+                                <span><i class="fa-regular fa-clock"></i> <strong>Segunda a Sábado</strong></span>
+                                <time><em>09:00 as 20:00</em></time>
+                                <address> Rio Branco, 000 - loja 000 - Centro - Rio de Janeiro - RJ</address>
+                            </div>
+    
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3090.647933202452!2d-43.18631489567138!3d-22.89785557376468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1690311162325!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+            </section>
+    </main>
+
+    <footer>
+        <span>Termos de Uso | Política de Privacidade</span>
+        <span>© Copyright 2023, criado por <a href="https://www.linkedin.com/in/maycon-cabral-0a3b15189/"target="_blank"> <strong>Maycon Cabral</strong></a></span>
+    </footer>
+
+
+        <!-- Modal de agendamento -->
+        <div class="modal-container">
+            
+                <button class="close-modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <div class="modal-end">
+                    <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                        <p class="msg-end"></p>
+                </div>
+
+                <div class="modal">
+                    <div class="header-modal">
+                        <ul>
+                            <li class="progressbar_1">
+                                <div class="bgcolor-1">
+                                    <span class="lt-stl">1</span>
+                                </div>
+                            </li>
+                                <li class="progressbar_2">
+                                    <div class="bgcolor-2">
+                                        <span class="lt-stl">2</span>
+                                    </div>
+                                </li>
+                                    <li class="progressbar_3">
+                                        <div class="bgcolor-3">
+                                            <span class="lt-stl">3</span>
+                                        </div>
+                                    </li>
+                        </ul>
+                    </div>
+
+                    <!-- Modal number one -->
+                        <div class="form-wrap form-wrap-1">
+                            <h3>Selecione um de nossos serviços</h3>
+                                <div class="form-select">
+
+                                    <div class="box-avatar box_avatar_cabelo">
+                                        <div class="select-avatar">
+                                            <img src="img/avatar-corte-cabelo.png" alt="avatar-corte">
+                                        </div>
+                                        <span class="title-avatar">Corte</span>
+                                    </div>
+                                
+                                    <div class="box-avatar box_avatar_barba">
+                                        <div class="select-avatar">
+                                            <img src="img/avatar-corte-barba.png" alt="avatar-barba">
+                                        </div>
+                                        <span class="title-avatar">Barba</span>
+                                    </div>
+
+                                    <div class="box-avatar box_avatar_kids">
+                                        <div class="select-avatar">
+                                            <img src="img/avatar-corte-kids.png" alt="avatar-kids">
+                                            </div>
+                                            <span class="title-avatar">Kids</span>
+                                    </div>
+
+                                </div>
+                        </div>
+
+                                <!-- Modals options two -->
+                                    <div class="form-wrap form-option-1">
+                                        <h3>Selecione o corte desejado</h3>
+                                        <form>
+                                            <div class="box-corte-one">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Tesoura</span>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Máquina</span>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Tesoura + Máquina</span>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Navalhado</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="box-corte-two">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Piguimentação</span>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Reflexo</span>
+                                                </div> 
+
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Pé do cabelo</span>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Platinação</span>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <div class="btns-wrap">
+                                            <button class="back-box" onclick="back()">Voltar</button>
+                                            <button class="next-box" onclick="next()">Avançar</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-wrap form-option-2">
+                                        <h3>Selecione o corte desejado</h3>
+                                        <form>
+                                            <div class="box-corte-one">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Aparar pontas</span>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Máquina</span>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Navalhado tradicional</span>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Arredondada</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="box-corte-two">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Cavanhaque</span>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Degradê</span>
+                                                </div> 
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Piguimentação</span>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Platinação</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="btns-wrap">
+                                            <button class="back-box" onclick="back()">Voltar</button>
+                                            <button class="next-box" onclick="next()">Avançar</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-wrap form-option-3">
+                                        <h3>Selecione o corte desejado</h3>
+                                        <form>
+                                            <div class="box-corte-one">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Aparar pontas</span>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Máquina</span>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Tesoura</span>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Tesoura + Maquina</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="box-corte-two">
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Desenho</span>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Degradê</span>
+                                                </div> 
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Piguimentação</span>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox">
+                                                    <span>Platinação</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="btns-wrap">
+                                            <button class="back-box" onclick="back()">Voltar</button>
+                                            <button class="next-box" onclick="next()">Avançar</button>
+                                        </div>
+                                    </div>
+
+                   
+                    <!-- Modal number three -->
+                        <div class="form-wrap form-wrap-3">
+                                    <h3>Selecione data e horário</h3>
+                                        <form class="container-hour-date">
+                                                <select id="horas" onchange="seletando()">
+                                                        <option value="">Horário</option>
+                                                        <option value="9"> 09:00</option>
+                                                        <option value="10">10:00</option>
+                                                        <option value="11">11:00</option>
+                                                        <option value="13">13:00</option>
+                                                        <option value="14">14:00</option>
+                                                        <option value="15">15:00</option>
+                                                        <option value="16">16:00</option>
+                                                        <option value="17">17:00</option>
+                                                        <option value="18">18:00</option>
+                                                        <option value="19">19:00</option>
+                                                        <option value="20">20:00</option>
+                                                </select>
+
+                                                <select id="data" onchange="seletando()">
+                                                    <option value="day">Dia</option>
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                    <option value="5">05</option>
+                                                    <option value="6">06</option>
+                                                    <option value="7">07</option>
+                                                    <option value="8">08</option>
+                                                    <option value="9">09</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                    <option value="21">21</option>
+                                                    <option value="22">22</option>
+                                                    <option value="23">23</option>
+                                                    <option value="24">24</option>
+                                                    <option value="25">25</option>
+                                                    <option value="26">26</option>
+                                                    <option value="27">27</option>
+                                                    <option value="28">28</option>
+                                                    <option value="29">29</option>
+                                                    <option value="30">30</option>
+                                                </select>
+
+                                                <select id="mes" onchange="seletando()">
+                                                    <option value="mes">Mês</option>
+                                                    <option value="Setembro">Setembro</option>
+                                                    <option value="Outubro">Outubro</option>
+                                                </select>
+                                        </form>
+                                        <p><strong>Obs:</strong> Somos uma empresa que presa pelo conforto visando sempre o melhor atendimento aos seus clientes, queremos salientar que não toleramos atrasos e que se possivel o cliente chegue com 10 minutos de antecedencia. A Barbearia Seu Cabral agradece!</p>
+
+                                    <div class="btns-wrap">
+                                        <button class="back-box" onclick="backdois()">Voltar</button>
+                                        <button class="next-box next-date" onclick="nextquatro()">Avançar</button>
+                                    </div>
+                        </div>
+
+                    <!-- Modal number four -->
+                        <div class="form-wrap form-wrap-4">
+                            <h3>Preencha seus dados</h3>
+                                <form id="container-info-data">
+                                    <div class="wrap-date">
+                                        <input type="text" class="info-data required" placeholder="Digite seu nome" oninput="nameValidate()">
+                                        <span class="msg-erro">Nome deve ter no mínimo 3 caracteres </span>
+                                    </div>
+
+                                    <div class="wrap-date">
+                                        <input type="email" class="info-data required" placeholder="Digite seu email" oninput="emailValidate()" inputmode="email">
+                                        <span class="msg-erro">Digite um email vádlido</span>
+                                    </div>
+                            
+                                    <div class="wrap-date">
+                                        <input type="text" maxlength="14" id="cpf" class="info-data required" autocomplete="off" placeholder="Digite seu CPF" oninput="cpfValidate()" inputmode="numeric">
+                                    <span class="msg-erro">Digite seu CPF corretamente</span>
+                                    </div>
+                                
+                                    <div class="wrap-date">
+                                        <input type="tel"  class="info-data required" id='numer' placeholder="Numero para contato" oninput="contatoValidate()" inputmode="tel">
+                                        <span class="msg-erro">Numero inválido</span>
+                                    </div>
+
+                                    <div class="btns-wrap">
+                                        <button class="back-box" onclick="backtres()">Voltar</button>
+                                        <button type="submit" class="next-box next" onclick="nextfinals()">Finalizar</button>
+                                    </div>
+                                </form>
+
+                        </div>
+
+                </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.menu-btn {
+display: none;
+position: relative;
+width: 60px;
+height: 40px;
+cursor: pointer;
+}
+
+.menu-btn span {
+position: absolute;
+width: 80%;
+height: 3px;
+background-color:var(--color-3) ;
+}
+
+.menu-btn span:nth-child(1) { 
+top: 0;
+transition: all .3s ease-in-out;
+}
+
+.menu-btn span:nth-child(2) { 
+top: 10px;
+}
+
+.menu-btn span:nth-child(3) { 
+top: 20px;
+transition: all .3s ease-in-out;
+}
+
+.menu-btn.active span:nth-child(1) { 
+top: 10px; 
+transform: rotate(225deg); 
+transition: all .3s ease-in-out;
+}
+
+.menu-btn.active span:nth-child(2) { 
+opacity:0;
+}
+
+.menu-btn.active span:nth-child(3) { 
+top: 10px; 
+transform: rotate(-225deg); 
+transition: all .3s ease-in-out;
+}
